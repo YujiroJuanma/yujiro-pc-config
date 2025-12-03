@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+while true; do 
+    if [[ $(playerctl --player=spotify metadata title) != $(cat ~/scripts/music/song_playing) ]]; then
+	    if [[ $(playerctl --player=spotify status) == "Playing" ]]; then
+            ~/scripts/music/song_change_notification
+	    fi
+    fi
+    sleep 1
+done
