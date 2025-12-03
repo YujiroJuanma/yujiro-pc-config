@@ -1,0 +1,24 @@
+#More barebones configs, this time featuring kitty!
+
+
+#Disable the headache inducing feature of confirm close and the damned bell
+confirm_os_window_close 0
+enable_audio_bell no
+
+background_opacity 0.7
+
+
+# BEGIN_KITTY_THEME
+# graphite
+include current-theme.conf
+# END_KITTY_THEME
+
+# BEGIN_KITTY_FONTS
+font_family      family="IosevkaTerm Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+#Default size is too big for my smaller monitor size
+font_size 9

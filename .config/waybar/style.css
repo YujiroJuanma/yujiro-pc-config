@@ -1,0 +1,176 @@
+/* My style sheet for waybar!
+*  Follows the solarized-dark color palette.
+*/
+
+    /* Solarized Dark Color Palette */
+    @define-color base03 rgba(40, 40, 40, 0.7);
+    @define-color base02 #444444;
+    @define-color base01 #444444;
+    @define-color base00 #657b83;
+    @define-color base0 #e0def4;
+    @define-color base1 #93a1a1;
+    @define-color base2 #d4be98;
+    @define-color base3 #fdf6e3;
+    @define-color yellow #d8a657;
+    @define-color orange #e78a4e;
+    @define-color red #ea6962;
+    @define-color magenta #d3869b;
+    @define-color violet #d3869b;
+    @define-color blue #7daea3;
+    @define-color cyan #89b482;
+    @define-color green #a9b665;
+
+* {
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  border-radius: 0px;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+}
+
+window#waybar {
+  background: @base03;
+  border: 1px solid @base01;
+  padding: 3px 0;
+  font-size: 34px;
+}
+
+window#waybar.hidden {
+  opacity: 0.98;
+}
+
+#window,
+#network,
+#wireplumber,
+#clock,
+#memory,
+#cpu,
+#wireplumber,
+#custom-notification,
+#pulseaudio,
+#custom-updates,
+#mpris {
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 10px;
+  color: @base03;
+  margin-right: 6px;
+  margin-left: 6px;
+  padding: 3px 7px;
+  border-bottom: 2px solid;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/*
+ *notification module.
+ */
+/* ======================================================== */
+/* workspaces module */
+/* ======================================================== */
+#workspaces {
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 10px;
+  font-weight: 600;
+  color: @blue;
+  padding: 3px 7px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 0;
+}
+
+#workspaces button {
+  color: @green;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-right: 1px;
+  margin-left: 1px;
+  min-width: 20px;
+  padding: 2 2px;
+  border-bottom: 2px solid @base03; /*Minor hack to make the buttons the same height no matter the status */
+}
+
+#workspaces button:hover {
+  background: @base01;
+}
+
+#workspaces button.active {
+  background: @base03;
+  border-bottom: 2px solid @cyan;
+}
+
+/* ======================================================== */
+/* Network module */
+/* ======================================================== */
+#network {
+  color: @yellow;
+  border-bottom-color: @yellow;
+}
+
+#network.disconnected {
+  color: @red;
+  border-bottom-color: @red;
+}
+
+/* ======================================================== */
+/* Audio module */
+/* ======================================================== */
+#wireplumber {
+  color: @orange;
+  border-bottom-color: @orange;
+}
+
+#wireplumber.muted {
+  color: @red;
+  border-bottom-color: @red;
+}
+
+/* ======================================================== */
+/* clock */
+/* ======================================================== */
+#clock {
+  color: @blue;
+  border-bottom-color: @blue;
+}
+
+/* ======================================================== */
+/* tray */
+/* ======================================================== */
+#tray {
+  padding: 5px 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-bottom-color: @cyan;
+}
+
+/* ======================================================== */
+/* Media player */
+/* ======================================================== */
+#mpris {
+  color: @green;
+  border-bottom-color: @green;
+}
+
+#mpris:hover {
+  color: @blue;
+  border-bottom-color: @blue;
+}
+
+
+#custom-updates {
+  color: @green;
+  border-bottom-color: @green;
+}
+
+#taskbar button {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0px 3px;
+}
+
+#taskbar button.active {
+  border-bottom: 2px solid @yellow;
+}

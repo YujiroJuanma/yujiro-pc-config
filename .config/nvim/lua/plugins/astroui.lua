@@ -1,0 +1,22 @@
+return {
+  "AstroNvim/astroui",
+  ---@type AstroUIOpts
+  opts = {
+    -- change colorscheme
+    -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
+    highlights = {
+    },
+    icons = {
+      LSPLoading1 = "⠋",
+      LSPLoading2 = "⠙",
+      LSPLoading3 = "⠹",
+      LSPLoading4 = "⠸",
+      LSPLoading5 = "⠼",
+      LSPLoading6 = "⠴",
+      LSPLoading7 = "⠦",
+      LSPLoading8 = "⠧",
+      LSPLoading9 = "⠇",
+      LSPLoading10 = "⠏",
+    },
+  },
+}

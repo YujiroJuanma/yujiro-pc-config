@@ -1,0 +1,19 @@
+#Barebones cava config
+#Adds gruv compliant colors.
+
+[general]
+#I like a good framerate.
+framerate = 75
+
+[input]
+#Set the input to pulse mode, auto source means to check for active sources.
+method = pipewire
+source = auto
+
+[color]
+gradient = 1
+gradient_count = 4
+gradient_color_1 = '#89b482'
+gradient_color_2 = '#7daea3'
+gradient_color_3 = '#a9b665'
+gradient_color_4 = '#d3869b'
