@@ -25,3 +25,5 @@ end
 require "lazy_setup"
 require "polish"
 vim.g.lazyvim_check_order = false
+
+vim.cmd("colorscheme rose-pine-moon")

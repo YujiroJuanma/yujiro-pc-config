@@ -15,7 +15,7 @@
   "format": "{}",
   "exec": "~/scripts/updates-pacman.sh",
   "tooltip": false,
-  "interval": 240,
+  "interval": 300,
   "signal": 1,
   "on-click": "alacritty -e '/home/yujirodogma/scripts/update-system.sh'"
 },

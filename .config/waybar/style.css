@@ -1,24 +1,24 @@
 /* My style sheet for waybar!
-*  Follows the solarized-dark color palette.
+*  Follows the rose-pine-moon color palette.
 */
+@import "./rose-pine-moon.css";
 
-    /* Solarized Dark Color Palette */
-    @define-color base03 rgba(40, 40, 40, 0.7);
-    @define-color base02 #444444;
-    @define-color base01 #444444;
-    @define-color base00 #657b83;
+    @define-color base03 rgba(35, 33, 54, 0.7);
+    @define-color base02 @overlay;
+    @define-color base01 @overlay;
+    @define-color base00 @muted;
     @define-color base0 #e0def4;
-    @define-color base1 #93a1a1;
-    @define-color base2 #d4be98;
+    @define-color base1 @subtle;
+    @define-color base2 @text;
     @define-color base3 #fdf6e3;
-    @define-color yellow #d8a657;
-    @define-color orange #e78a4e;
-    @define-color red #ea6962;
+    @define-color yellow @gold;
+    @define-color orange @rose;
+    @define-color red @love;
     @define-color magenta #d3869b;
     @define-color violet #d3869b;
-    @define-color blue #7daea3;
-    @define-color cyan #89b482;
-    @define-color green #a9b665;
+    @define-color blue @pine;
+    @define-color cyan @foam;
+    @define-color green @foam;
 
 * {
   padding: 0;
